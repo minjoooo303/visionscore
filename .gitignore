@@ -1,0 +1,21 @@
+cat >> .gitignore << 'EOF'
+# Flutter build outputs
+build/
+.dart_tool/
+
+# IDE
+.idea/
+.vscode/
+
+# logs
+*.log
+
+# 모델/대용량 파일 무시
+*.pt
+*.onnx
+*.h5
+*.ckpt
+models/
+Junction/models/
+Junction/models/pt/
+EOF

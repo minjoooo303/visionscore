@@ -1,0 +1,12 @@
+# .dockerignore
+.git
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+uploads/
+models/pt/*.pt
+Junction/
