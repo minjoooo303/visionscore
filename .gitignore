@@ -1,21 +1,33 @@
-cat >> .gitignore << 'EOF'
-# Flutter build outputs
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Flutter / Dart
 build/
 .dart_tool/
+**/.dart_tool/
+**/build/
 
-# IDE
-.idea/
-.vscode/
-
-# logs
-*.log
-
-# 모델/대용량 파일 무시
+# Local models and temporary uploads
+models/
 *.pt
 *.onnx
 *.h5
 *.ckpt
-models/
-Junction/models/
-Junction/models/pt/
-EOF
+uploads/
+**/uploads/
+*.log
+
+# OS and IDE
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/
